@@ -1,7 +1,7 @@
 # MILP-aided-Cube-attack-like-cryptanalysis
 For Keccak-MAC-512, whose capacity is 1024-bit.
  1. Using SageMath, run file "Keccak51264_genlp.py" and obtain file "lpkeccak51264.lp" as a model in Gurobi.
-In this step we obtain the constrians in forms of inequations used by the MILP model.
+In this step we obtain the constraints in forms of inequations used by the MILP model.
 2. Using Gurobi, read and optimize the model file "lpkeccak51264.lp", 
 then obtain the result file "keccakmac51264cube_min_key.sol",
 i.e. the minimum of related key bits with 64-dimension linear cube is 95.
